@@ -1,0 +1,87 @@
+body {
+  line-height: 1;
+  font-family: $font;
+  color: $text-color;
+  font-weight: 400;
+  background: #f2f2f2;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: linear-gradient(rgb(0, 238, 255), rgb(10, 199, 189));
+}
+main,
+footer {
+  overflow: hidden;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: $font;
+}
+img:hover{
+  transform: scale(1.5);
+  transition: all 3s ease;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-heading {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: $font;
+  color: #23262f;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+  margin-bottom: 12px;
+}
+
+.text-sub-heading {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: $sub-font;
+  color: #84878b;
+  line-height: 1.5;
+}
+.slick-arrow {
+  width: 36px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -100px;
+  color: #84878b;
+}
+.slick-arrow:hover {
+  background-color: #21bfee;
+  transition: all 1s ease;
+}
+.slick-next {
+  background: #e6e8ec;
+  border: 1px solid #e6e8ec;
+  right: 30px;
+  color: #84878b;
+}
+.slick-prev {
+  background: #f4f5f6;
+  border: 1px solid #e6e8ec;
+  right: 80px;
+  color: #b1b5c4;
+}
+@media screen and (max-width: 767px) {
+  .button {
+    padding: 13px 26px;
+  }
+}

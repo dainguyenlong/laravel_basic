@@ -1,0 +1,260 @@
+.hero {
+  margin-top: 78px;
+  img:hover {
+    transform: none;
+  }
+  img {
+    position: relative;
+    width: 100%;
+    height: 656px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &-container {
+    position: relative;
+  }
+  &-content {
+    position: absolute;
+    bottom: 200px;
+    p {
+      font-family: $sub-font;
+      font-weight: 700;
+      width: 490px;
+      height: 240px;
+      text-shadow: 0px 8px 16px rgba(51, 51, 51, 0.08);
+      font-size: 64px;
+      color: #ffffff;
+    }
+  }
+  &-search {
+    position: absolute;
+    width: 100%;
+    height: 205px;
+    bottom: -78px;
+    background-color: #ffffff;
+    box-shadow: 0px 12px 60px rgba(89, 89, 89, 0.1);
+    border-radius: 20px;
+    .search-content {
+      display: flex;
+      position: relative;
+      padding: 30px 60px;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #3b3e44;
+      width: 100%;
+      height: 100%;
+      &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 850px;
+        border-bottom: 1px solid #e7ecf3;
+        padding-bottom: 28px;
+        .search-service,
+        .search-passenger {
+          display: flex;
+          align-items: center;
+          column-gap: 32px;
+          color: #3b3e44;
+        }
+        .search-service {
+          position: relative;
+          font-size: 14px;
+          font-weight: bold;
+          .search-room::after {
+            content: "";
+            position: absolute;
+            width: 66px;
+            height: 2px;
+            background: #316bff;
+            bottom: -29px;
+            left: 0;
+          }
+          .search-fly,
+          .search-car {
+            color: #84878b;
+          }
+          i {
+            margin-right: 8px;
+          }
+        }
+        .search-passenger {
+          font-weight: 500;
+          .search-trip,
+          .search-pass {
+            i {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+      .passenger-model {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        bottom: 215px;
+        right: 0;
+        width: 354px;
+        height: 224px;
+        background: #ffffff;
+        box-shadow: 0px 12px 60px rgba(89, 89, 89, 0.1);
+        border-radius: 16px;
+        padding: 20px 30px;
+        row-gap: 18px;
+        .adults {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #e6e8ec;
+          padding-bottom: 15px;
+          &-info {
+            &-name {
+              font-size: 16px;
+              font-weight: 500;
+              color: #777e90;
+              margin-bottom: 8px;
+            }
+            &-subname {
+              font-size: 14px;
+              font-weight: 400;
+              color: #b1b5c3;
+            }
+          }
+          &-btn {
+            input {
+              width: 10px;
+              text-align: center;
+              border: none;
+            }
+            button {
+              width: 32px;
+              border-radius: 100%;
+              height: 32px;
+              border: 1px solid #b1b5c4;
+              color: #b1b5c4;
+              text-align: center;
+            }
+          }
+        }
+        .adults:nth-child(3) {
+          border-bottom: none;
+        }
+      }
+      &-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        .search-info {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .loca-item {
+            position: absolute;
+            background: #ffffff;
+            color: #b1b5c4;
+            right: 0;
+            top: 50%;
+            transform: translate(60%, -50%);
+            z-index: 1;
+            padding: 10px;
+            border-radius: 100%;
+          }
+          .search-location,
+          .search-checkin,
+          .search-checkout,
+          .search-passenger-mobile {
+            position: relative;
+            label {
+              display: flex;
+              flex-direction: column;
+              background: #f4f5f7;
+              border: 1px solid #e7e8ea;
+              box-sizing: border-box;
+              border-radius: 8px;
+              height: 70px;
+              padding: 10px 24px 12px;
+              color: #3b3e44;
+              font-size: 18px;
+              font-weight: 500;
+              input {
+                height: 100%;
+                background: #f4f5f7;
+                color: #b1b5c4;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                margin-top: 6px;
+                padding-top: 6px;
+              }
+            }
+          }
+          .search-location {
+            width: 330px;
+            .location-model {
+              display: none;
+              position: absolute;
+              flex-direction: column;
+              top: 75px;
+              width: 400px;
+              background: #ffffff;
+              border: 1px solid #f4f5f6;
+              box-shadow: 0px 12px 60px rgba(89, 89, 89, 0.1);
+              border-radius: 20px;
+              height: 300px;
+              padding: 18px 20px;
+              z-index: 1000;
+              .location-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+
+                i {
+                  font-size: 20px;
+                  margin-right: 10px;
+                  color: #b1b5c4;
+                }
+                .item-detail {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  align-items: flex-start;
+                  row-gap: 7px;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  -webkit-line-clamp: 1;
+                  -webkit-box-orient: vertical;
+                  &-name {
+                    font-size: 16px;
+                    color: #777e91;
+                  }
+                  &-subname {
+                    font-size: 14px;
+                    color: #b1b5c4;
+                  }
+                }
+              }
+            }
+          }
+          .search-checkin,
+          .search-checkout {
+            width: 250px;
+          }
+          .search-passenger-mobile {
+            display: none;
+          }
+        }
+        .search-btn {
+          color: #ffffff;
+          background: #3b71fe;
+          border-radius: 10px;
+          padding: 22px 41px;
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

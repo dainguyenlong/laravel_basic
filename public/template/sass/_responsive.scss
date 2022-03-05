@@ -1,0 +1,315 @@
+@media screen and (max-width: 63.9375em) {
+  .hero-search {
+    .passenger-model {
+      z-index: 1000;
+      bottom: 320px !important;
+    }
+    height: 315px;
+    .search-content {
+      padding: 20px;
+      &-footer {
+        justify-content: center;
+        flex-wrap: wrap;
+        .search-info {
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .hero-search .search-content-footer .search-info .loca-item {
+    display: none;
+  }
+  .trending-item-info {
+    width: 100%;
+  }
+  .trending-item-list {
+    display: block;
+  }
+  .trending-list,
+  .feature-list {
+    display: block;
+  }
+  .feature-item {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .feature-item:not(:last-child) {
+    margin-bottom: 20px !important;
+  }
+  .travel-item {
+    width: calc(50% - 30px) !important;
+  }
+  .footer {
+    .footer-subscribe {
+      .footer-menu {
+        display: block;
+        padding: 15px 20px;
+        .subscribe {
+          input {
+            width: 100%;
+          }
+        }
+        .footer-text {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .footer-main {
+      .trip-info {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 46.25em) {
+  .header {
+    .header-container {
+      padding: 24px 20px;
+    }
+    &-logo {
+      img {
+        width: 25px !important;
+        height: 25px !important;
+      }
+      span {
+        font-size: 12px !important;
+      }
+    }
+    &-util {
+      .avatar {
+        img {
+          width: 28px;
+          height: 28px;
+        }
+        span,
+        i {
+          display: none;
+        }
+      }
+      .line {
+        margin: 0 15px;
+      }
+      .lang {
+        font-size: 12px;
+        img {
+          margin: 0 10px 0 8px;
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+  .hero {
+    .hero-content {
+      bottom: 380px;
+      p {
+        font-size: 40px;
+        width: 320px;
+        line-height: 1.5;
+      }
+    }
+    .hero-search {
+      height: 425px !important;
+      .search-content-top {
+        flex-direction: column;
+        align-items: flex-start;
+        border: none;
+        padding: 0;
+        .search-service {
+          .search-room::after {
+            bottom: -15px;
+          }
+        }
+        .search-passenger {
+          margin: 30px 0 15px 0;
+        }
+        .passenger-model {
+          z-index: 1000;
+          width: 100%;
+          bottom: 100px !important;
+        }
+      }
+      .search-content-footer {
+        gap: 0;
+        .search-info {
+          gap: 0;
+          flex-wrap: wrap;
+          // Fix lỗi gap không ăn trên trình duyệt Mobile
+          .search-location,
+          .search-checkin,
+          .search-checkout,
+          .search-passenger-mobile {
+            margin-bottom: 10px;
+          }
+          .search-checkin {
+            margin-right: 10px;
+          }
+          .search-checkin,
+          .search-checkout {
+            width: calc(50% - 5px);
+          }
+          .loca-item {
+            display: none;
+          }
+          .search-location {
+            width: 100%;
+            .location-model {
+              width: 100%;
+            }
+          }
+        }
+        .search-passenger-mobile {
+          display: block !important;
+          width: 100%;
+        }
+        .search-btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .trending-item-list {
+    display: block;
+  }
+  .trending-list {
+    padding: 0;
+    .trending-item-info {
+      // width: 100%;
+      padding: 12px;
+      img {
+        margin-right: 15px;
+        width: 150px;
+      }
+    }
+    .trending-item-detail {
+      .item-price {
+        font-size: 18px;
+      }
+    }
+  }
+  .text-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .text-sub-heading {
+    width: auto !important;
+    font-size: 14px !important;
+    text-align: center;
+  }
+
+  .place-list::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+  }
+  .place-list {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    .place-item {
+      flex: 1 0 220px;
+      &-content {
+        padding: 20px;
+        text-align: center;
+        img {
+          margin: 0 auto 10px;
+        }
+      }
+    }
+  }
+  .travel {
+    &-list::-webkit-scrollbar {
+      width: 0 !important;
+      display: none;
+    }
+    &-list {
+      flex-wrap: nowrap;
+      overflow: auto;
+      overflow: -moz-scrollbars-none;
+      -ms-overflow-style: none;
+      .travel-item {
+        flex: 1 0 270px;
+        width: 80%;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  // Customer Calender
+  #ui-datepicker-div {
+    width: auto !important;
+    left: 0 !important;
+    height: auto !important;
+  }
+  .ui-datepicker-multi-2 .ui-datepicker-group {
+    width: 100% !important;
+  }
+  .footer {
+    &-sub {
+      height: 170px;
+    }
+    &-subscribe {
+      .footer-menu {
+        display: block;
+        padding: 15px 20px;
+        height: auto;
+        .subscribe {
+          input {
+            width: 100%;
+            padding: 20px 0 20px 22px;
+            text-overflow: ellipsis;
+          }
+          button {
+            padding: 10px 20px;
+          }
+        }
+        .footer-text {
+          margin-bottom: 15px;
+          &-heading {
+            font-size: 18px;
+          }
+          &-subheading {
+            font-size: 12px;
+            width: auto;
+          }
+        }
+      }
+    }
+    .footer-main {
+      margin-top: 50px;
+      flex-direction: column-reverse;
+      padding: 0;
+      .trip-info {
+        margin-left: 20px;
+        display: block;
+        .service,
+        .support {
+          border-bottom: 1px solid #b3bcc8;
+          margin-bottom: 20px;
+          .subheading {
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .trip-guide {
+        margin-left: 20px;
+        margin-top: 40px;
+        .logo {
+          img {
+            width: 25px;
+            height: 25px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        .info-trip {
+          display: none;
+        }
+      }
+    }
+  }
+}

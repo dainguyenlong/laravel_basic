@@ -1,0 +1,157 @@
+.footer {
+  &-sub {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: rgb(0 43 255 / 72%);
+    border-radius: 16px;
+  }
+  // &-sub::before {
+  //   content: "";
+  //   position: absolute;
+  //   background-image: url('../images/Ellipse.png');
+  //   top: 0;
+  //   right: 0;
+  // }
+  &-subscribe {
+    position: relative;
+  }
+  &-menu {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 90px;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    .subscribe {
+      position: relative;
+      input {
+        position: relative;
+        width: 490px;
+        padding: 26px 0 26px 22px;
+        font-size: 16px;
+        color: #b1b5c4;
+        font-weight: 500;
+        background: #fcfcfd;
+        box-shadow: 10px 16px 60px -7px rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+        border: none;
+      }
+      button {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        padding: 18px 30px;
+        background: #353945;
+        box-shadow: 0px 12px 20px -5px rgba(23, 23, 126, 0.1);
+        border-radius: 4px;
+        font-size: 16px;
+        color: #ffffff;
+      }
+    }
+  }
+  &-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5;
+    color: #ffffff;
+    &-heading {
+      font-size: 44px;
+      font-weight: 800;
+    }
+    &-subheading {
+      font-size: 16px;
+      font-weight: 400;
+      opacity: 0.88;
+      width: 370px;
+    }
+  }
+  &-main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30px;
+    margin-bottom: 150px;
+    .trip-guide {
+      display: flex;
+      flex-direction: column;
+      width: 260px;
+      .logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        img {
+          margin-right: 10px;
+          width: 40px;
+          height: 40px;
+        }
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          color: #222529;
+        }
+      }
+      .info-trip {
+        font-size: 16px;
+        color: #84878b;
+        margin-bottom: 24px;
+      }
+      .dark-light {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // padding: 10px 20px;
+        width: 128px;
+        height: 38px;
+        background: #ffffff;
+        border: 0.5px solid #efefef;
+        border-radius: 10px;
+        .light {
+          width: 50%;
+          height: 30px;
+          background: #fcfcfd;
+          box-shadow: 0px 2px 2px rgb(67 67 67 / 10%);
+          border-radius: 8px;
+          text-align: center;
+          line-height: 30px;
+          margin-left: 1px;
+          i {
+            width: 100%;
+          }
+        }
+        .dark {
+          text-align: center;
+          line-height: 38px;
+          width: 50%;
+        }
+      }
+    }
+    .trip-info {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      margin-left: 150px;
+      .service,
+      .support,
+      .business {
+        display: flex;
+        font-weight: 500;
+        flex-direction: column;
+        .heading {
+          color: #222529;
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        .subheading {
+          font-size: 16px;
+          color: #84878b;
+          line-height: 2.5;
+        }
+      }
+    }
+  }
+}

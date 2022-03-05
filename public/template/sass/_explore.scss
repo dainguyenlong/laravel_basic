@@ -1,0 +1,103 @@
+.explore {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  &-intro {
+    margin-bottom: 40px;
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    margin-right: -30px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  &-item:nth-child(2) {
+    box-shadow: 0px 15px 45px rgba(102, 102, 102, 0.1);
+  }
+  &-item:hover {
+    background-color: #21bfee;
+    transition: all 1.5s ease;
+    color: #FFFFFF;
+  }
+  &-item {
+    position: relative;
+    width: calc(25% - 30px);
+    margin-right: 30px;
+    height: 365px;
+    padding: 14px;
+    background-color: #ffffff;
+    border: 1px solid #e7ecf3;
+    border-radius: 20px;
+    flex-shrink: 0;
+    img {
+      background: linear-gradient(
+        175.54deg,
+        rgba(2, 0, 14, 0.13) 9.38%,
+        rgba(42, 34, 101, 0) 47.26%,
+        rgba(15, 11, 44, 0.6) 92.77%
+      );
+      border-radius: 16px;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      height: 155px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .item-info {
+      margin-top: 20px;
+      word-break: break-all;
+      white-space: nowrap;
+      word-wrap: break-word;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      .item-point {
+        font-size: 14px;
+        margin-bottom: 20px;
+        i {
+          color: yellow;
+        }
+        span {
+          color: #3b3e44;
+          font-weight: 500;
+          margin-left: 8px;
+          margin-right: 3px;
+        }
+      }
+      .item-name {
+        font-size: 20px;
+        font-weight: bold;
+        color: #3b3e44;
+        margin-bottom: 20px;
+        span {
+          float: right;
+          font-size: 18px;
+          background: rgba(49, 107, 255, 0.2);
+          border-radius: 6px;
+          color: #316bff;
+          padding: 3px 10px;
+        }
+      }
+      .item-distance {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      .item-location {
+        margin-bottom: 8px;
+        font-size: 14px;
+        i {
+          height: 18px;
+          width: 14px;
+          margin-right: 12px;
+        }
+      }
+      .item-room {
+        font-size: 14px;
+        i {
+          height: 18px;
+          width: 14px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
